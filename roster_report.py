@@ -1,14 +1,6 @@
 # -*- coding: utf-8 -*-
 # ★ 小项目：花名册 SQL 版结构报告
-# ---------------------------------------------------------------
-# 这是你的第一个独立小项目，也是 GitHub 仓库 roster-analyzer 的第一份真代码。
-# 用到的全部知识 = 01~04 四课：SELECT / WHERE / GROUP BY / ORDER BY / LIMIT / COUNT / AVG
-#
-# 玩法：把每个 TODO 里的 SQL 补全（只许用你学过的写法），运行一次过一个。
-# 全部跑通 = 报告完成 = 可以截图发进 GitHub 仓库。
-#
-# 自检答案在文件最底部（先自己填，对不上了再看）。
-# ---------------------------------------------------------------
+
 
 import os
 import sqlite3
@@ -87,31 +79,6 @@ ORDER BY 司龄 DESC LIMIT 3
 """, "任务6 · 司龄 Top3")
 
 
-conn.close()
-print("\n全部跑通 = 你的第一份 SQL 报告完成 ✅  可以截图上传 GitHub 仓库了")
 
 
-# ================================================================
-# 自检答案（卡壳超 15 分钟再看）
-# ================================================================
-# TODO_1:
-#   SELECT COUNT(*) AS 总人数 FROM employees
-#
-# TODO_2:
-#   SELECT ROUND(AVG(年龄),1) AS 平均年龄, ROUND(AVG(司龄),1) AS 平均司龄
-#   FROM employees
-#
-# TODO_3:
-#   SELECT COUNT(*) AS 在职人数 FROM employees WHERE 在职状态 = '在职'
-#
-# TODO_4:
-#   SELECT 部门, COUNT(*) AS 人数 FROM employees
-#   GROUP BY 部门 ORDER BY 人数 DESC
-#
-# TODO_5:
-#   SELECT 学历, COUNT(*) AS 人数 FROM employees
-#   GROUP BY 学历 ORDER BY 人数 DESC
-#
-# TODO_6:
-#   SELECT 姓名, 司龄 FROM employees
-#   ORDER BY 司龄 DESC LIMIT 3
+
